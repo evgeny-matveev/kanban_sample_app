@@ -1,0 +1,14 @@
+{
+  "name": "kanban_app",
+  "version": "1.0.0",
+  "description": "Simple kanban application (ES2015, react, flux, webpack).",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Evgeny Matveyev",
+  "license": "ISC",
+  "devDependencies": {
+    "webpack": "^1.12.2"
+  }
+}
