@@ -48,7 +48,7 @@ export default class App extends React.Component {
     return (
       <div>
         <button className="add-note" onClick={this.addNote}>+</button>
-        <Notes items={notes} />
+        <Notes items={notes} onEdit={this.editNote}/>
       </div>
     );
   }
@@ -60,5 +60,9 @@ export default class App extends React.Component {
         task: 'New task'
       }])
     });
+  }
+
+  editNote(noteId, task) {
+    console.log('note edited', noteId, task);
   }
 }
