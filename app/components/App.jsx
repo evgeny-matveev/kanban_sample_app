@@ -38,13 +38,27 @@ export default class App extends React.Component {
         }
       ]
     };
+
+    this.addNote = this.addNote.bind(this);
   }
 
   render() {
     const notes = this.state.notes;
-    
+
     return (
-      <div><Notes items={notes} /></div>
+      <div>
+        <button className="add-note" onClick={this.addNote}>+</button>
+        <Notes items={notes} />
+      </div>
     );
+  }
+
+  addNote() {
+    this.setState({
+      notes: this.state.notes.concat([{
+        id: uuid.v4(),
+        task: 'New task'
+      }])
+    });
   }
 }
