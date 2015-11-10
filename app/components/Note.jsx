@@ -20,7 +20,7 @@ export default class Note extends React.Component {
 
     return (
       <div>
-        { editing ? this.renderEdit() : this.renderTask() }
+        {editing ? this.renderEdit() : this.renderTask()}
       </div>
     );
   }
@@ -43,7 +43,7 @@ export default class Note extends React.Component {
       </div>
     );
   }
-  
+
   renderDelete() {
     return <button className="delete" onClick={this.props.onDelete}>x</button>;
   }

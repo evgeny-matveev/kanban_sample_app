@@ -8,21 +8,24 @@
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "Evgeny Matveyev",
-  "license": "ISC",
+  "license": "MIT",
   "devDependencies": {
-    "babel-core": "^5.8.25",
     "babel-loader": "^5.3.2",
-    "css-loader": "^0.19.0",
-    "html-webpack-plugin": "^1.6.2",
-    "style-loader": "^0.12.4",
-    "webpack": "^1.12.2",
-    "webpack-dev-server": "^1.12.0",
-    "webpack-merge": "^0.2.0"
+    "babel-plugin-react-transform": "^1.1.1",
+    "css-loader": "^0.15.5",
+    "html-webpack-plugin": "^1.6.0",
+    "react-transform-hmr": "^1.0.1",
+    "style-loader": "^0.12.3",
+    "webpack": "^1.10.1",
+    "webpack-dev-server": "^1.10.1",
+    "webpack-merge": "^0.1.2"
   },
   "dependencies": {
-    "alt": "^0.17.6",
+    "alt": "^0.17.4",
+    "alt-container": "^1.0.0",
     "array.prototype.findindex": "^1.0.0",
     "node-uuid": "^1.4.3",
-    "react": "^0.14.0"
+    "react": "^0.14.0",
+    "react-dom": "^0.14.0"
   }
 }
